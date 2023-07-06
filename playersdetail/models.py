@@ -6,13 +6,13 @@ class Player(models.Model):
     secondName=models.CharField(max_length=32)
     date_of_birth=models.DateField(max_length=16)
     image=models.ImageField()
-    id_number=models.IntegerField()
+    id_number=models.CharField(max_length=20)
     gersey_number=models.PositiveIntegerField()
     field_number=models.PositiveIntegerField()
     phone_number=models.CharField(max_length=20)
     email=models.EmailField()
-    field=models.TextField()
-    division=models.TextField()
+    field=models.CharField(max_length=30)
+    division=models.CharField(max_length=30)
 
 
     
